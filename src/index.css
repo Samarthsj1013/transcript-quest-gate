@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Professional Blue */
+    --primary: 207 90% 54%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 207 90% 45%;
+
+    /* Secondary - Amber Accent */
+    --secondary: 45 100% 51%;
+    --secondary-foreground: 215 25% 15%;
+
+    /* Success - Green */
+    --success: 122 39% 49%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Amber */
+    --warning: 45 100% 51%;
+    --warning-foreground: 215 25% 15%;
+
+    /* Destructive - Red */
+    --destructive: 4 90% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Muted */
+    --muted: 210 15% 95%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Accent */
+    --accent: 207 90% 96%;
+    --accent-foreground: 207 90% 54%;
+
+    /* Status Colors */
+    --status-pending: 45 100% 51%;
+    --status-approved: 122 39% 49%;
+    --status-rejected: 4 90% 58%;
+
+    /* Borders & Inputs */
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 207 90% 54%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 215 28% 17%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 207 90% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 24%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 215 20% 30%;
+    --sidebar-ring: 207 90% 54%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(207 90% 54%) 0%, hsl(207 80% 40%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 20% 99%) 100%);
+  }
+
+  .dark {
+    --background: 215 28% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 215 25% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 215 25% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 207 90% 54%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 207 90% 45%;
+
+    --secondary: 45 100% 51%;
+    --secondary-foreground: 215 25% 15%;
+
+    --success: 122 39% 49%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 45 100% 51%;
+    --warning-foreground: 215 25% 15%;
+
+    --destructive: 4 90% 58%;
+    --destructive-foreground: 0 0% 100%;
+
+    --muted: 215 20% 20%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 215 25% 20%;
+    --accent-foreground: 207 90% 54%;
+
+    --status-pending: 45 100% 51%;
+    --status-approved: 122 39% 49%;
+    --status-rejected: 4 90% 58%;
+
+    --border: 215 20% 25%;
+    --input: 215 20% 25%;
+    --ring: 207 90% 54%;
+
+    --sidebar-background: 215 30% 12%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 207 90% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 18%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 215 20% 20%;
+    --sidebar-ring: 207 90% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

@@ -1,0 +1,13 @@
+-- =====================================================
+-- DEPRECATED - USE REMOVE_ALL_DUPLICATE_FOREIGN_KEYS.sql INSTEAD
+-- =====================================================
+-- This script was replaced by a more comprehensive solution.
+--
+-- Please use: REMOVE_ALL_DUPLICATE_FOREIGN_KEYS.sql
+--
+-- That script removes ALL 5 duplicate foreign keys created by
+-- FIXED_MIGRATION.sql, not just the one for users table.
+-- =====================================================
+
+-- For reference, use this comprehensive script instead:
+-- See: REMOVE_ALL_DUPLICATE_FOREIGN_KEYS.sql
